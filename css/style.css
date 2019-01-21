@@ -22,6 +22,7 @@ body {
 .container {
 
 margin-top: 20px;
+
    
  
 
@@ -70,17 +71,19 @@ h2{
 }
 
 #description {
+  text-align: center;
   align-self: center;
   color:#746955;
-  font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 900;
 
 }
 
 #other-description {
+  text-align: center;
   align-self: center;
   color:#3E6481;
-  font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(8px + (22 - 8) * ((100vw - 300px) / (1600 - 300)));
 
 
 }
@@ -158,45 +161,113 @@ justify-content: center;
   
 color: #746955;
 
-font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));;
+font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
 
   }
 
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #746955;
 
-font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));;
+font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
  color: #746955;
 
-font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));;
+font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
 }
 
 
 .box-4 {
     margin-top: 20px;
-    padding-top: 10px;
+    padding: 10px 0 40px 0;
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   flex-direction: column;
   align-items: left;
-  height: 80px;
+  
 
   }
 
-  #dropdown {
+
+
+
+
+
+  /*#dropdown {
   width: 50%;
   padding: 10px 0 10px 5px;
   border: none;
   border-radius: 4px;
   background-color: #f1f1f1;
-  margin: 0 10px 0 20px;
+  margin: 10px 10px 0 20px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
 
 
 
+
+
+
+
+
+  }*/
+
+
+
+  .icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
   }
+
+  .custom-select::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+  }
+
+.custom-select {
+    border: 1px solid #ccc;
+    overflow: hidden; 
+    height: 40px;    
+    width: 240px;
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+select{  
+  
+  font-family: 'Varela Round', sans-serif;     
+    height: 40px;
+    padding: 5px;
+    border: 0;
+       font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));   
+    width: 240px;
+   -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.custom-select::after {
+    content:"\f0d7";
+    font-family: Font Awesome 5 Free;
+    color: #000;
+    padding:5px 25px;
+    position: absolute; right: 0; top: 0;
+    background: transparent;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;      
+    pointer-events: none;
+    box-sizing: border-box;   
+}
+
+
+
+
 
 
   fieldset {
@@ -205,27 +276,113 @@ font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));;
   }
 
 
-  .box-5 {
 
-margin-top: 20px;
+.box-5 {
+  margin-top: 20px;
+
+    background-color: rgba(255,255,255, 0.7);
+
 
   }
+
+  #check legend {
+
+    margin-left: -20px;
+    padding-top: 20px;
+  }
+
+
+  #check  {
+ 
+ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40px;
+
+  }
+
+  #check input {
+    margin-top: 8px;
+    position: absolute;
+    margin-left: -20px;
+
+  }
+
+ 
+
+
 
   .box-6 {
 
-    margin-top: 20px;
+    
+    background-color: rgba(255,255,255, 0.7);
+    
+  padding-bottom: 20px;
 
 
   }
+
+
+
+  #radiocheck legend {
+
+    margin-left: -20px;
+    padding-top: 20px;
+  }
+
+
+  #radiocheck  {
+ 
+ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40px;
+
+  }
+
+  #radiocheck input {
+    margin-top: 8px;
+    position: absolute;
+    margin-left: -20px;
+
+  }
+
+
+
+
 
   .box-7 {
 
 margin-top: 20px;
+    padding-top: 10px;
+  background-color: rgba(255,255,255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
 
   }
 
 
+#text-area-label {
+margin-left: 20px;
 
+}
+
+#text-area {
+
+  width: 80%;
+  padding: 10px 0 10px 20px;
+
+  box-sizing: border-box;
+  background-color: rgba(255,255,255, 0);
+  border:none;
+  margin: 0 10px 0 5px;
+}
 
 
 

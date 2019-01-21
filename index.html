@@ -20,11 +20,15 @@
     <!--fonts -->
 
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
     
 
 
     <!--stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
 
 
@@ -66,6 +70,7 @@
 
     <div class="box-4">
     <label id="dropdown-label" for="dropdown">What kind of transportation do you use most often? </label>
+    <div class="custom-select">
     <select required id="dropdown" name="transportation">
     <option disabled selected value> -- select an option -- </option>
     <option value="car">Car</option>
@@ -77,10 +82,11 @@
     <option value="bicycle">Bicycle</option>
     <option value="walk">Walk</option>
   </select>
+</div>
  </div>
 
 <div class="box-5">    
-<fieldset>
+<fieldset id="check">
 <legend for="itens">  Actions for the good of the environment.(Check all that apply)</legend>
  <input id="one" type="checkbox" name="itens" value="one">
  <label for="one">Don't buy any products I can't re-use.</label>
@@ -96,7 +102,7 @@
 </div>
 
 <div class="box-6">
-<fieldset>
+<fieldset id="radiocheck">
 <legend for="itens2">Have you ever thought about planting a tree? </legend>
 <input id="six" type="radio" name="itens2" value="one">
 <label for="six">Yes</label>
