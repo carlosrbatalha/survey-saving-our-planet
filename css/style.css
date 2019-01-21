@@ -130,6 +130,16 @@ justify-content: center;
 
   }
 
+  .box-1 {
+padding-top: 10px;
+
+  }
+
+  .box-3 {
+
+    padding-bottom: 10px;
+  }
+
   
 
 
@@ -178,9 +188,13 @@ font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
 }
 
 
+
+/* dropdown select style starts here */
+
 .box-4 {
     margin-top: 20px;
-    padding: 10px 0 40px 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   flex-direction: column;
@@ -188,9 +202,6 @@ font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
   
 
   }
-
-
-
 
 
 
@@ -203,12 +214,6 @@ font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
   margin: 10px 10px 0 20px;
   font-family: 'Varela Round', sans-serif;
   font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
-
-
-
-
-
-
 
 
   }*/
@@ -233,7 +238,7 @@ font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
     height: 40px;    
     width: 240px;
     position: relative;
-    display: flex;
+    
     margin-left: 20px;
     margin-top: 10px;
 }
@@ -269,18 +274,18 @@ select{
 
 
 
-
   fieldset {
 
     border: none;
   }
 
 
-
 .box-5 {
-  margin-top: 20px;
+   margin-top: 20px;
 
     background-color: rgba(255,255,255, 0.7);
+
+    padding-bottom: 20px;
 
 
   }
@@ -316,10 +321,14 @@ select{
 
   .box-6 {
 
+    margin-top: 20px;
+
     
     background-color: rgba(255,255,255, 0.7);
     
   padding-bottom: 20px;
+  padding-top: 20px;
+
 
 
   }
@@ -327,28 +336,22 @@ select{
 
 
   #radiocheck legend {
-
     margin-left: -20px;
-    padding-top: 20px;
   }
 
 
   #radiocheck  {
- 
- 
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-left: 40px;
-
   }
 
   #radiocheck input {
     margin-top: 8px;
     position: absolute;
     margin-left: -20px;
-
   }
 
 
@@ -356,15 +359,13 @@ select{
 
 
   .box-7 {
-
-margin-top: 20px;
-    padding-top: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   flex-direction: column;
   align-items: left;
-
-
   }
 
 
@@ -384,6 +385,10 @@ margin-left: 20px;
   margin: 0 10px 0 5px;
 }
 
+#input {
+
+  margin-top: 20px;
+}
 
 
 
