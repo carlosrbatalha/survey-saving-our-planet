@@ -29,7 +29,7 @@ margin-top: 20px;
 }
 
 header {
-background: #CCB445;
+background: #848C35;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -82,7 +82,8 @@ h2{
 #other-description {
   text-align: center;
   align-self: center;
-  color:#3E6481;
+  color:#334949;
+  font-family: 'Varela Round', sans-serif;
   font-size: calc(8px + (22 - 8) * ((100vw - 300px) / (1600 - 300)));
 
 
@@ -361,7 +362,7 @@ select{
   .box-7 {
   margin-top: 20px;
   padding-top: 20px;
-  margin-bottom: 20px;
+  
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   flex-direction: column;
@@ -385,10 +386,41 @@ margin-left: 20px;
   margin: 0 10px 0 5px;
 }
 
-#input {
+#submit{
+  background-color: rgba(255,255,255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100px;
+  padding-bottom: 10px;
+  padding-top:10px;
 
   margin-top: 20px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));   
 }
+
+#submit:hover{
+  background-color: rgba(255,255,255, 1);
+
+  }
+
+  footer {
+display:flex;
+justify-content: center;
+align-self: center;
+margin-top: 20px;
+margin-bottom: 20px;
+
+  }
+
+  footer a {
+
+color: black;
+font-size: calc(26px + (38 - 26) * ((100vw - 300px) / (1600 - 300))); 
+
+
+  }
 
 
 
