@@ -59,12 +59,12 @@
 
     <div class="box-1">
     <label id="name-label" for="name">Name:</label>
-    <input type="text"  placeholder="Enter your name" id="name" name="name">
+    <input type="text"  required placeholder="Enter your name" id="name" name="name">
     </div>
 
     <div class="box-2">
     <label id="email-label" for="email">Email:</label>
-    <input type="email"  placeholder="Enter your email" id="email" name="email">
+    <input type="email"  required placeholder="Enter your email" id="email" name="email">
     </div>
 
     <div class="box-3">
@@ -121,7 +121,7 @@
 <label id="text-area-label" for="text-area"> Use this space to share ideas on other actions you might take to reduce your carbon footprint.</label>
 <textarea rows="4" cols="100" id="text-area" name="comment" placeholder="Write your text here..." ></textarea>
 </div>
-<button id="submit" type="submit">Submit</button>
+<button id="submit" type="submit" onclick='myFunction()'>Submit</button>
 
 
 </form>
@@ -136,17 +136,29 @@
 </footer>
 
 
+
+<!---- Credit to CAPTAIN PEN ----- PURE CSS POPUP --->
+
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Here i am</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            Thank to pop me out of that button, but now i'm done so you can close this window.
+        </div>
+    </div>
+</div>
+
+
+
 </div> <!-- div main container -->
-</body>
-</html>
 
-
-
-
-
-    </div> <!-- main div and the container -->
 
 <script type="text/javascript" src="js/script.js"></script>    
-</body>
 
+</body>
 </html>
+
+
+
+
