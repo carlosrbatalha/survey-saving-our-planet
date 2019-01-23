@@ -184,14 +184,55 @@ else {
 
     
 
-    	result.innerHTML =  25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight + "%"
+   result.innerHTML =  25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight + "%"
 
+
+
+// if statemment related with change with quotes and format change
+
+var quotesLow = [
+'I think what is interesting in life is all the cracks and all the flaws and all the moments that are not perfect - Clemence Poesy',
+'I\'m always in search for perfection. If it\'s not perfect, I\'m back to the drawing board - Venus Williams',
+'We\'re not perfect, but we want to do the right thing - Charlie Bell',
+'Failure is the key to success; each mistake teaches us something - Morihei Ueshiba',
+'The human condition is not perfect. We are not perfect specimens, any of us. We\'re not robots - Michael Ovitz',
+'Self-belief and hard work will always earn you success - Virat Kohli',
+'Success isn\'t always about greatness. It\'s about consistency. Consistent hard work leads to success. Greatness will come - Dwayne Johnson',
+'Success is a journey, not a destination. The doing is often more important than the outcome - Arthur Ashe'
+]
+
+var quotesHigh = [
+
+'You very well deserve these congrats for your hard work and dedication. Congratulations on your success.',
+'You\'ve made us all so proud. I am very happy for you.',
+'Good work. Your hard work has truly paid off.',
+'You have performed extremely adequately.',
+'My face has a proud smile because of you.',
+'Congratulations for being so balanced and focused throughout. Enjoy your success.',
+'Congratulations on scaling new heights and setting new standards.'
+
+
+
+
+]
+
+
+
+
+
+
+
+
+    var randomNumber = Math.floor(Math.random() * (quotesLow.length));
+    var randomNumberTwo = Math.floor(Math.random() * (quotesHigh.length));
 
     
 	if ((25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight) >= 50 ) {
 
 
     document.getElementById("result").style.color = "green";
+    document.getElementById("quoteDisplayHigh").innerHTML = quotesHigh[randomNumberTwo];
+    
 
 	}
 
@@ -199,6 +240,7 @@ else {
 	else {
 
 document.getElementById("result").style.color = "red";
+document.getElementById("quoteDisplayLow").innerHTML = quotesLow[randomNumber];
 
 	}
 
@@ -215,7 +257,7 @@ document.getElementById("result").style.color = "red";
 };
 
 
-// function to show the result
+
 
 
 
@@ -230,6 +272,11 @@ function myFunction(){
     	return false;
     if (form.age.value == "")
     	return false;
+    if (form.transportation.value == "")
+    	return false;
+
+
+    
    
 
 
