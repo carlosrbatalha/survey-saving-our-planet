@@ -69,13 +69,13 @@
 
     <div class="box-3">
     <label id="number-label" for="number">Age:</label>
-    <input type="number"  placeholder="Age" id="number" name="age" min="1" max="120">
+    <input type="number"  required placeholder="Age" id="number" name="age" min="1" max="120">
     </div>
 
     <div class="box-4">
     <label id="dropdown-label" for="dropdown">What kind of transportation do you use most often? </label>
     <div class="custom-select">
-    <select  id="dropdown" name="transportation">
+    <select  id="dropdown" required name="transportation">
     <option disabled selected value> -- select an option -- </option>
     <option value="car">Car</option>
     <option value="motorbike">Motorbike</option>
@@ -90,7 +90,7 @@
  </div>
 
 <div class="box-5">    
-<fieldset  id="check">
+<fieldset required for="itens"  id="check">
 <legend for="itens">  Actions for the good of the environment.<span>(Check all that apply)</span></legend>
  <input id="one" type="checkbox" name="itens" value="one">
  <label for="one">Don't buy any products I can't re-use.</label>
@@ -106,7 +106,7 @@
 </div>
 
 <div class="box-6">
-<fieldset id="radiocheck">
+<fieldset required for="itens2" id="radiocheck">
 <legend for="itens2">Have you ever thought about planting a tree? </legend>
 <input id="six" type="radio" name="itens2" value="one">
 <label for="six">Yes</label>
@@ -141,10 +141,12 @@
 
 <div id="popup1" class="overlay">
     <div class="popup">
-        <h2>Here i am</h2>
+        <h2 align="center">Your Total Score Was</h2>
         <a class="close" href="#">&times;</a>
         <div class="content">
-            Thank to pop me out of that button, but now i'm done so you can close this window.
+            <h2  align="center" id="result"></h2>
+            
+            
         </div>
     </div>
 </div>
