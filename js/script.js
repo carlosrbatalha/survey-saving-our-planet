@@ -9,6 +9,8 @@ form.onsubmit = function (e) {
 
 	e.preventDefault ();
 	var result = document.getElementById('result');
+	var result3 = document.getElementById('result3');
+	
 
 	var selectValue = form.transportation.value;
     
@@ -175,11 +177,30 @@ else {
 	radioEight = 0;
 }
 
+    
+
+   
 
 
-	console.log (radioThree);
-	
-	result.innerHTML =  25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight + "!";
+    
+
+    	result.innerHTML =  25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight + "%"
+
+
+    
+	if ((25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight) >= 50 ) {
+
+
+    document.getElementById("result").style.color = "green";
+
+	}
+
+
+	else {
+
+document.getElementById("result").style.color = "red";
+
+	}
 
 	
 
