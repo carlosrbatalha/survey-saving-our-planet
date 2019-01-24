@@ -266,6 +266,10 @@ document.getElementById("quoteDisplayLow").innerHTML = quotesLow[randomNumber];
 
 
 function myFunction(){
+
+var emailFilter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+
+
     if (form.name.value == "")
     	return false;
     if (form.email.value == "")
@@ -273,7 +277,13 @@ function myFunction(){
     if (form.age.value == "")
     	return false;
     if (form.transportation.value == "")
+
     	return false;
+
+   if (!emailFilter.test(form.email.value)) {
+  
+        return false;
+    }
 
 
     
