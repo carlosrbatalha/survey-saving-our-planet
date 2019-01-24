@@ -230,7 +230,7 @@ var quotesHigh = [
 	if ((25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight) >= 50 ) {
 
 
-    document.getElementById("result").style.color = "green";
+    document.getElementById("result").style.color = "#848C35";
     document.getElementById("quoteDisplayHigh").innerHTML = quotesHigh[randomNumberTwo];
     
 
@@ -239,7 +239,7 @@ var quotesHigh = [
 
 	else {
 
-document.getElementById("result").style.color = "red";
+document.getElementById("result").style.color = "#9a8b67";
 document.getElementById("quoteDisplayLow").innerHTML = quotesLow[randomNumber];
 
 	}
