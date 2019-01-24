@@ -101,7 +101,7 @@ position: relative;
 
 main::after{
   content: "";
-  background: url("img/earth1.jpg");
+  background: url("survey-saving-our-planet/img/earth1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
