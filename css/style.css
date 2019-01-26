@@ -353,6 +353,7 @@ position: relative;
 
 
 
+
   }
 
   #check label, #check input[type="checkbox"]  {
@@ -417,6 +418,15 @@ margin-left: 5px;
   }
 
 
+/* some test for firefox */
+
+
+
+
+
+
+
+
 
 
 
@@ -441,6 +451,7 @@ margin-left: 20px;
 
   width: 100%;
   padding: 10px 0 10px 20px;
+  font-family: 'Varela Round', sans-serif;
 
   box-sizing: border-box;
   background-color: rgba(255,255,255, 0);
