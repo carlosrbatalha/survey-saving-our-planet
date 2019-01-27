@@ -436,6 +436,8 @@ margin-left: 5px;
     align-items: flex-start;
     flex-direction: column;
     margin-left: 0px;
+    font-size: calc(12px + (21 - 12) * ((100vw - 300px) / (1600 - 300)));  
+    font-family: 'Varela Round', sans-serif; 
   }
 
   #radiocheck input {
@@ -496,6 +498,8 @@ margin-left: 5px;
  #submit {
   background-color: rgba(255,255,255, 0.7);
   display: flex;
+
+  /* This two lines for mobile phones */
   -webkit-border:none;
   -webkit-border-radius:0px;
   
