@@ -370,7 +370,7 @@ margin-left: 25px;
 
 
   .check-label {
- font-size: 12px;  
+ font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (1600 - 300))); 
  font-family: 'Varela Round', sans-serif; 
 
   }
@@ -459,8 +459,14 @@ margin-left: 5px;
     cursor: pointer;
 
   margin-left: 25px; 
+  font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (1600 - 300)));
 
 
+  }
+
+  #radiocheck legend {
+
+    font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (1600 - 300)));
   }
 
 
@@ -502,6 +508,7 @@ margin-left: 5px;
    border:none;
   -webkit-border:none;
   -webkit-border-radius:0px;
+  -webkit-appearance:default-button;
   
 
   justify-content: center;
@@ -521,7 +528,7 @@ margin-left: 5px;
   border: none;
   -webkit-border:none;
   -webkit-border-radius:0px;
-
+  -webkit-appearance:default-button;
   }
 
   footer {
