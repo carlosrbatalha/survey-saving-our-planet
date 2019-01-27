@@ -43,8 +43,11 @@ line-height: calc(2.1em + (2.9 - 2.1) * ((100vw - 300px)/(1600 - 300)));
 
 
 #title {
-
+display: flex;
+flex-direction: column;
+justify-content: center;
 color:white;
+line-height: calc(1.5em + (2.9 - 1.5) * ((100vw - 300px)/(1600 - 300)));
 font-family: 'Varela Round', sans-serif;
 align-self: center;
 font-size: calc(36px + (50 - 36) * ((100vw - 300px) / (1600 - 300)));
