@@ -56,7 +56,8 @@ h2{
   color:white;
   font-style: italic;
   align-self: center;
-  margin-top: 10px;
+ 
+  padding:10px;
   font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 300;
 }
@@ -65,7 +66,9 @@ h2{
  display:flex;
  justify-content: center;
  flex-direction: column;
- height: 130px;
+ padding:30px;
+
+ 
  
 
 }
@@ -74,7 +77,9 @@ h2{
   text-align: center;
   align-self: center;
   color:#746955;
-  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+
+
+  font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 900;
 
 }
@@ -83,8 +88,9 @@ h2{
   text-align: center;
   align-self: center;
   color:#334949;
+  padding-top: 10px;
   font-family: 'Varela Round', sans-serif;
-  font-size: calc(8px + (22 - 8) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1600 - 300)));
 
 
 }
@@ -128,6 +134,8 @@ justify-content: center;
   display: flex;
   align-items: center;
   height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 
 
   }
@@ -162,11 +170,12 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 
 
-  #name-label, #email-label, #number-label, #dropdown-label {
+  /*#name-label, #email-label, #number-label, #dropdown-label {
    margin-left: 20px;
+
    position: relative;
 
-  }
+  }*/
 
   #name, #email, #number {
 
@@ -218,12 +227,14 @@ font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
 
 .box-4 {
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   
 
   }
@@ -264,8 +275,9 @@ font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));
     width: 240px;
     position: relative;
     
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 10px;
+
 }
 
 select{  
@@ -273,6 +285,7 @@ select{
     font-family: 'Varela Round', sans-serif;     
     height: 40px;
     padding: 5px;
+    padding-left: 15px;
     border: 0;
        font-size: calc(9px + (21 - 9) * ((100vw - 300px) / (1600 - 300)));   
     width: 240px;
@@ -286,7 +299,7 @@ select{
     content:"\f0d7";
     font-family: Font Awesome 5 Free;
     color: #000;
-    padding:5px 25px;
+    padding:10px 25px;
     position: absolute; right: 0; top: 0;
     background: transparent;
     z-index: 1;
@@ -309,14 +322,18 @@ select{
 
 .box-5 {
    margin-top: 20px;
-   
+
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 30px;
+    padding-top: 30px;
 
     background-color: rgba(255,255,255, 0.7);
 
-    padding-bottom: 20px;
+    
     display: flex;
   
-  align-items: left;
+  align-items: flex-start;
  
 
 
@@ -324,8 +341,8 @@ select{
 
   #check legend {
 
-    margin-left: -20px;
-    padding-top: 20px;
+    margin-left: 0px;
+   
     
 
   }
@@ -336,9 +353,9 @@ select{
  
     
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 0px;
     
 
 
@@ -346,12 +363,15 @@ select{
 
   #check label {
 position: relative;
+margin-left: 25px;
 
   }
 
+
+
   input[type="checkbox"] {
-    margin-top: 8px;
-    margin-left: -20px;
+    margin-top: calc(4px + (15 - 4) * ((100vw - 300px) / (1600 - 300))); 
+    
     position: absolute;
 
 
@@ -380,12 +400,13 @@ margin-left: 5px;
 
     
     background-color: rgba(255,255,255, 0.7);
-    
-  padding-bottom: 20px;
-  padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
  
     display: flex;
-    align-items: left;
+    align-items: flex-start;
 
 
   }
@@ -393,7 +414,7 @@ margin-left: 5px;
 
 
   #radiocheck legend {
-    margin-left: -20px;
+    margin-left: 0px;
   }
 
 
@@ -402,24 +423,36 @@ margin-left: 5px;
   #radiocheck  {
     position: relative;
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 0px;
   }
 
   #radiocheck input {
-    margin-top: 8px;
+    margin-top: calc(4px + (15 - 4) * ((100vw - 300px) / (1600 - 300))); 
     position: absolute;
     display: flex;
-    align-items: left;
-    margin-left: -20px;
+    align-items: flex-start;
+    margin-left: 0px;
   }
 
-  #radiocheck input, #radiocheck label {
+
+
+
+
+
+
+#radiocheck label {
 
     cursor: pointer;
+
+  margin-left: 25px; 
   }
 
+#radiocheck input {
+
+
+}
 
 /* some test for firefox */
 
@@ -435,25 +468,21 @@ margin-left: 5px;
 
   .box-7 {
   margin-top: 20px;
-  padding-top: 20px;
+  padding: 30px;
   
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   }
 
 
-#text-area-label {
-margin-left: 20px;
-
-}
 
 #text-area {
 
 
   width: 100%;
-  padding: 10px 0 10px 20px;
+  padding: 10px;
   font-family: 'Varela Round', sans-serif;
 
   box-sizing: border-box;
@@ -606,37 +635,6 @@ fill: #5a4761;
 
 }
 
-.twitterico {
-
-
-
-}
-
-
-
-.faceico {
-
-
-
-
-}
-
-
-
-
-.instangramico {
-
-
-}
-
-
-
-.mailico {
-
-
-
-}
-
 
 
 
@@ -671,6 +669,24 @@ fill: #5a4761;
   
   .popup{
     width: 70%;
+    
+
+
+  }
+
+
+  #check label {
+
+margin-left: 20px;
+
+  }
+
+
+  #radiocheck label {
+
+    
+
+  margin-left: 20px; 
   }
 }
 
