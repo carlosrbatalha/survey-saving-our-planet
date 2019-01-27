@@ -464,13 +464,13 @@ margin-left: 20px;
   resize: none;
 }
 
-#submit{
+ #submit {
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   
-  justify-content: center;
-
   
+
+  justify-content: center;
   align-self: center;
   width: 100px;
 
