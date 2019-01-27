@@ -345,13 +345,7 @@ select{
 
   }
 
-  #check legend {
-
-    margin-left: 0px;
-   
-    
-
-  }
+  
 
 
   #check  {
@@ -370,7 +364,13 @@ select{
   #check label {
 position: relative;
 margin-left: 25px;
-font-size: calc(12px + (21 - 12) * ((100vw - 300px) / (1600 - 300)));  
+
+
+  }
+
+
+  .check-label {
+ font-size: calc(12px + (21 - 12) * ((100vw - 300px) / (1600 - 300)));  
  font-family: 'Varela Round', sans-serif; 
 
   }
