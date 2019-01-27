@@ -35,6 +35,7 @@ flex-direction: column;
 justify-content: center;
 width: 100%;
 height: 150px;
+padding: 20px;
 line-height: calc(2.1em + (2.9 - 2.1) * ((100vw - 300px)/(1600 - 300)));
 
 
@@ -46,11 +47,13 @@ line-height: calc(2.1em + (2.9 - 2.1) * ((100vw - 300px)/(1600 - 300)));
 display: flex;
 flex-direction: column;
 justify-content: center;
-color:white;
-line-height: calc(1.5em + (2.9 - 1.5) * ((100vw - 300px)/(1600 - 300)));
-font-family: 'Varela Round', sans-serif;
 align-self: center;
-font-size: calc(36px + (50 - 36) * ((100vw - 300px) / (1600 - 300)));
+text-align: center;
+color:white;
+line-height: calc(1em + (2.5 - 1.5) * ((100vw - 300px)/(1600 - 300)));
+font-family: 'Varela Round', sans-serif;
+
+font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 
