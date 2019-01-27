@@ -457,16 +457,9 @@ margin-left: 5px;
     cursor: pointer;
 
   margin-left: 25px; 
+
+  
   }
-
-
-
-/* some test for firefox */
-
-
-
-
-
 
 
 
@@ -503,6 +496,7 @@ margin-left: 5px;
  #submit {
   background-color: rgba(255,255,255, 0.7);
   display: flex;
+  border:none;
   
   
 
@@ -520,6 +514,7 @@ margin-left: 5px;
 
 #submit:hover{
   background-color: rgba(255,255,255, 1);
+  border: none;
 
   }
 
