@@ -383,6 +383,8 @@ margin-left: 25px;
 
 
 
+
+
   }
 
   #check label, #check input[type="checkbox"]  {
@@ -680,6 +682,19 @@ fill: #5a4761;
 
   }
 
+   .box-1, .box-2, .box-3 {
+  
+  border: 0;
+
+
+  }
+
+
+   #survey-form {
+
+padding: 20px;
+
+}
 
   #check label {
 
@@ -704,6 +719,16 @@ padding:20px;
 
 
 }
+
+input[type="checkbox"],input[type="radio"] {
+    
+
+  transform: scale(0.8);
+
+
+
+
+  }
 
 
 
