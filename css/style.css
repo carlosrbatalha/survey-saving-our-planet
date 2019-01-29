@@ -338,7 +338,7 @@ select{
     
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
   }
@@ -362,7 +362,7 @@ select{
 
     position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -370,7 +370,7 @@ select{
 
   .first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eightfinal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     position: relative;
     align-items: center;
