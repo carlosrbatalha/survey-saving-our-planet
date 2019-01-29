@@ -9,7 +9,7 @@ form.onsubmit = function (e) {
 
 	e.preventDefault ();
 	var result = document.getElementById('result');
-	var result3 = document.getElementById('result3');
+	
 	
 
 	var selectValue = form.transportation.value;
@@ -75,7 +75,7 @@ form.onsubmit = function (e) {
    var radioOne = document.getElementById('one').value;
 
     if (document.getElementById('one').checked) {
-    radioOne = 20;
+    radioOne = 5;
      
 }
 
@@ -91,7 +91,7 @@ else {
 var radioTwo = document.getElementById('two').value;
 
     if (document.getElementById('two').checked) {
-    radioTwo = 20;
+    radioTwo = 5;
      
 }
 
@@ -103,7 +103,7 @@ else {
 var radioThree = document.getElementById('three').value;
 
     if (document.getElementById('three').checked) {
-    radioThree = 20;
+    radioThree = 5;
      
 }
 
@@ -116,7 +116,7 @@ else {
    var radioFour = document.getElementById('four').value;
 
     if (document.getElementById('four').checked) {
-    radioFour = 20;
+    radioFour = 5;
      
 }
 
@@ -129,7 +129,7 @@ else {
 var radioFive = document.getElementById('five').value;
 
     if (document.getElementById('five').checked) {
-    radioFive = 20;
+    radioFive = 5;
      
 }
 
@@ -154,7 +154,7 @@ else {
 var radioSeven = document.getElementById('seven').value;
 
     if (document.getElementById('seven').checked) {
-    radioSeven = 20;
+    radioSeven = 0;
      
 }
 
@@ -168,7 +168,7 @@ else {
 var radioEight = document.getElementById('eight').value;
 
     if (document.getElementById('eight').checked) {
-    radioEight = 20;
+    radioEight = 10;
      
 }
 
@@ -184,7 +184,7 @@ else {
 
     
 
-   result.innerHTML =  25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight + "%"
+   result.innerHTML =  20 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight + "%"
 
 
 
@@ -284,10 +284,6 @@ var emailFilter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
   
         return false;
     }
-
-
-    
-   
 
 
     else
