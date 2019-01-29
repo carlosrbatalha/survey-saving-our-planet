@@ -328,6 +328,7 @@ select{
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
 
   }
 
@@ -338,7 +339,7 @@ select{
     
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 
   }
@@ -353,7 +354,10 @@ select{
   .check-label {
  font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (1600 - 300))); 
  font-family: 'Varela Round', sans-serif; 
-  
+  display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
   }
 
 
@@ -362,17 +366,17 @@ select{
 
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
   }
 
   .first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eightfinal {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-    position: relative;
+    
     align-items: center;
 
   }
@@ -402,6 +406,7 @@ margin-left: 5px;
     padding: 30px;
     display: flex;
     align-items: flex-start;
+    flex-direction: row;
 
   }
 
@@ -481,7 +486,7 @@ margin-left: 5px;
   -webkit-appearance:default-button;
 
   justify-content: center;
-  align-self: center;
+  align-items: center;
   width: 100px;
   padding:10px;
   margin-top: 20px;
