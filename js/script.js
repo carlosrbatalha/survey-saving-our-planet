@@ -7,63 +7,122 @@ var form = document.getElementById('survey-form');
 
 form.onsubmit = function (e) {
 
-	e.preventDefault ();
-	var result = document.getElementById('result');
-	
-	
+  e.preventDefault ();
+  var result = document.getElementById('result');
+  
+  
 
-	var selectValue = form.transportation.value;
+  var selectValue = form.transportation.value;
+  
     
  // Selected Value options
 
+ var selectedCar = document.getElementById('car').value;
 
-	if (selectValue == "car") {
-       
-       selectValue = 0
+if (document.getElementById('car').selected) {
+    selectedCar = 0;
+     
+}
 
-	}
+else {
 
-	if (selectValue == "motorbike") {
-       
-       selectValue = 10
+  selectedCar = 0;
+}
 
-	}
 
-	if (selectValue == "bus") {
-       
-       selectValue = 10
+var selectedMoto = document.getElementById('motorbike').value;
 
-	}
+if (document.getElementById('motorbike').selected) {
+    selectedMoto = 0;
+     
+}
 
-	if (selectValue == "taxi") {
-       
-       selectValue = 0
+else {
 
-	}
+  selectedMoto = 0;
+}
 
-	if (selectValue == "train") {
-       
-       selectValue = 10
 
-	}
 
-	if (selectValue == "plane") {
-       
-       selectValue = -10
 
-	}
+var selectedBus = document.getElementById('bus').value;
 
-	if (selectValue == "bicycle") {
-       
-       selectValue = 20
+if (document.getElementById('bus').selected) {
+    selectedBus = 10;
+     
+}
 
-	}
+else {
 
-	if (selectValue == "walk") {
-       
-       selectValue = 20
+  selectedBus = 0;
+}
 
-	}
+
+
+var selectedTaxi = document.getElementById('taxi').value;
+
+if (document.getElementById('taxi').selected) {
+    selectedTaxi = 0;
+     
+}
+
+else {
+
+  selectedTaxi = 0;
+}
+
+
+var selectedTrain = document.getElementById('train').value;
+
+if (document.getElementById('train').selected) {
+    selectedTrain = 10;
+     
+}
+
+else {
+
+  selectedTrain = 0;
+}
+
+  
+
+var selectedPlane = document.getElementById('plane').value;
+
+if (document.getElementById('plane').selected) {
+    selectedPlane = -10;
+     
+}
+
+else {
+
+  selectedPlane = 0;
+}
+
+  var selectedBike = document.getElementById('bicycle').value;
+
+if (document.getElementById('bicycle').selected) {
+    selectedBike = 20;
+     
+}
+
+else {
+
+  selectedBike = 0;
+}
+
+  var selectedWalk = document.getElementById('walk').value;
+
+if (document.getElementById('walk').selected) {
+    selectedWalk = 20;
+     
+}
+
+else {
+
+  selectedWalk = 0;
+}
+
+  
 
 
 
@@ -81,7 +140,7 @@ form.onsubmit = function (e) {
 
 else {
 
-	radioOne = 0;
+  radioOne = 0;
 }
 
 
@@ -97,7 +156,7 @@ var radioTwo = document.getElementById('two').value;
 
 else {
 
-	radioTwo = 0;
+  radioTwo = 0;
 }
 
 var radioThree = document.getElementById('three').value;
@@ -109,7 +168,7 @@ var radioThree = document.getElementById('three').value;
 
 else {
 
-	radioThree = 0;
+  radioThree = 0;
 }
    
 
@@ -122,7 +181,7 @@ else {
 
 else {
 
-	radioFour = 0;
+  radioFour = 0;
 }
 
 
@@ -135,7 +194,7 @@ var radioFive = document.getElementById('five').value;
 
 else {
 
-	radioFive = 0;
+  radioFive = 0;
 }
 
 
@@ -148,7 +207,7 @@ var radioSix = document.getElementById('six').value;
 
 else {
 
-	radioSix = 0;
+  radioSix = 0;
 }
 
 var radioSeven = document.getElementById('seven').value;
@@ -160,7 +219,7 @@ var radioSeven = document.getElementById('seven').value;
 
 else {
 
-	radioSeven = 0;
+  radioSeven = 0;
 }
 
 
@@ -174,7 +233,7 @@ var radioEight = document.getElementById('eight').value;
 
 else {
 
-	radioEight = 0;
+  radioEight = 0;
 }
 
     
@@ -184,7 +243,7 @@ else {
 
     
 
-   result.innerHTML =  20 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight + "%"
+   result.innerHTML =  35 + selectedCar + selectedMoto + selectedBus + selectedTaxi + selectedTrain + selectedPlane + selectedBike + selectedWalk + radioOne + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight + "%"
 
 
 
@@ -203,7 +262,7 @@ var quotesLow = [
 
 var quotesHigh = [
 
-'You very well deserve these congrats for your hard work and dedication. Congratulations on your success.',
+'You very well deserve these congrats for your hard work and dedication. Congratulations on your success.',
 'You\'ve made us all so proud. I am very happy for you.',
 'Good work. Your hard work has truly paid off.',
 'You have performed extremely adequately.',
@@ -219,7 +278,7 @@ var quotesHigh = [
 
 
 
-
+  var resultFinal = 35 + selectedCar + selectedMoto + selectedBus + selectedTaxi + selectedTrain + selectedPlane + selectedBike + selectedWalk + radioOne + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight;
 
 
 
@@ -227,30 +286,36 @@ var quotesHigh = [
     var randomNumberTwo = Math.floor(Math.random() * (quotesHigh.length));
 
     
-	if ((25 + radioTwo + radioThree + radioFour + radioFive + radioSix + radioSeven + radioEight) >= 50 ) {
+  if (resultFinal < 50 ) {
 
 
+   
     document.getElementById("result").style.color = "#848C35";
-    document.getElementById("quoteDisplayHigh").innerHTML = quotesHigh[randomNumberTwo];
+    document.getElementById("quoteDisplayLow").innerHTML = quotesLow[randomNumber];
     
 
-	}
+  }
 
 
-	else {
+  else if (resultFinal <= 100) {
+
+    
 
 document.getElementById("result").style.color = "#9a8b67";
-document.getElementById("quoteDisplayLow").innerHTML = quotesLow[randomNumber];
 
-	}
-
-	
+document.getElementById("quoteDisplayHigh").innerHTML = quotesHigh[randomNumberTwo];
 
 
 
+  }
+
+  
 
 
-	form.reset();
+
+
+
+  form.reset();
 
 
 
@@ -271,14 +336,14 @@ var emailFilter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
 
 
     if (form.name.value == "")
-    	return false;
+      return false;
     if (form.email.value == "")
-    	return false;
+      return false;
     if (form.age.value == "")
-    	return false;
+      return false;
     if (form.transportation.value == "")
 
-    	return false;
+      return false;
 
    if (!emailFilter.test(form.email.value)) {
   
@@ -287,10 +352,8 @@ var emailFilter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
 
 
     else
-    	return location.href="#popup1";
+      return location.href="#popup1";
 }
-
-
 
 
 
