@@ -550,6 +550,7 @@ font-size: calc(26px + (38 - 26) * ((100vw - 300px) / (1600 - 300)));
 .overlay:target {
   visibility: visible;
   opacity: 1;
+  z-index: 10;
 }
 
 .popup {
@@ -560,6 +561,8 @@ font-size: calc(26px + (38 - 26) * ((100vw - 300px) / (1600 - 300)));
   width: 40%;
   position: relative;
   transition: all 5s ease-in-out;
+
+
 }
 
 .popup h2 {
@@ -657,6 +660,8 @@ fill: #5a4761;
   
 }
 
+
+
 .popup .close:hover {
   color: #5a4761;
   cursor:pointer;
@@ -664,8 +669,10 @@ fill: #5a4761;
 
 
 .popup .content {
+
   max-height: 30%;
   overflow: auto;
+
 }
 
 
