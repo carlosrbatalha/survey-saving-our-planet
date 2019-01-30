@@ -328,7 +328,7 @@ select{
   background-color: rgba(255,255,255, 0.7);
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: column;
 
   }
 
@@ -338,8 +338,8 @@ select{
   #check  {
     
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
 
   }
@@ -355,8 +355,8 @@ select{
  font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (1600 - 300))); 
  font-family: 'Varela Round', sans-serif; 
   display: flex;
-    align-items: center;
-    flex-direction: row;
+    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -366,7 +366,7 @@ select{
 
     position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 
@@ -374,20 +374,20 @@ select{
 
   .first  {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     
-    align-items: center;
+    align-items: flex-start;
 
   }
 
 
   .second, .third, .fourth, .fifth, .sixth, .seventh, .eightfinal{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     
-    align-items: center;
+    align-items: flex-start;
 
 
   }
@@ -417,7 +417,7 @@ margin-left: 5px;
     padding: 30px;
     display: flex;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
 
   }
 
@@ -431,7 +431,7 @@ margin-left: 5px;
     position: relative;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     font-size: calc(12px + (21 - 12) * ((100vw - 300px) / (1600 - 300)));  
     font-family: 'Varela Round', sans-serif; 
@@ -440,7 +440,7 @@ margin-left: 5px;
   #radiocheck input {
      
     position: absolute;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     align-items: flex-start;
     justify-content: center;
